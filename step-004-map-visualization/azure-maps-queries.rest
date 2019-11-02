@@ -1,0 +1,19 @@
+@subscription-key = REPLACE_WITH_YOUR_AZURE_MAPS_SUBSCRIPTION_KEY
+@SeattleWA = -122.33028,47.60323
+
+###
+# Get Location from IP address
+### 
+GET https://atlas.microsoft.com/geolocation/ip/json?api-version=1.0&ip=86.206.7.209&subscription-key={{subscription-key}}
+
+###
+# Get route from Seattle, WA to Redmond, WA
+### 
+@query = 47.60323,-122.33028:47.67491,-122.124
+
+GET https://atlas.microsoft.com/route/directions/json?api-version=1.0&subscription-key={{subscription-key}}&query={{query}}&routeRepresentation=polyline&travelMode=car&view=Auto
+
+###
+# GetTimezoneByCoordinates for Redmond, WA
+###
+GET https://atlas.microsoft.com/timezone/byCoordinates/json?subscription-key={{subscription-key}}&api-version=1.0&options=all&query={{SeattleWA}}

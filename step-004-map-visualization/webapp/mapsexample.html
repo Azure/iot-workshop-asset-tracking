@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Map Example</title>
+    <meta charset="utf-8">
+    <meta http-equiv="cache-control" content="no-cache" />
+
+    <!-- styles are only used for styling header and auth elements, where possible -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body style="font-family: 'Segoe UI', sans-serif;">
+    
+    <div id="chart1" style="position:relative;width: 50%;height:calc(100vh - 60px); margin-top: 40px;float:left;"></div>
+    <div id="myMap" style="position:relative;width:50%;height:calc(100vh - 60px);margin-top:40px;float:left;"></div>
+
+    <!-- Add references to the Azure Maps Map control JavaScript and CSS files. -->
+    <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/css/atlas.min.css?api-version=2" type="text/css" />
+    <script src="https://atlas.microsoft.com/sdk/js/atlas.min.js?api-version=2"></script>
+
+    <!-- Add references to the Azure TSI JavaScript and CSS files. -->
+    <link rel="stylesheet" href="https://unpkg.com/tsiclient@1.2.61/tsiclient.css" type="text/css" />
+    <script src="https://unpkg.com/tsiclient@1.2.61/tsiclient.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.7.0/bluebird.min.js"></script>
+
+    <!-- boilerplate auth code is injected with auth.js, check it out for auth setup -->
+    <script src="./auth.js"></script>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

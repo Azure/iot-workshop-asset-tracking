@@ -1,0 +1,216 @@
+{
+    "put": [
+        {
+            "id": "1be09af9-f089-4d6b-9f0b-48018b5f7393",
+            "name": "Asset Tracker",
+            "description": "Asset tracker equipped with various sensors",
+            "variables": {
+                "EventCount": {
+                    "kind": "aggregate",
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "count()"
+                    }
+                },
+                "Humidity": {
+                    "kind": "numeric",
+                    "value": {
+                        "tsx": "$event.[humidity].Double"
+                    },
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "avg($value)"
+                    }
+                },
+                "Temperature": {
+                    "kind": "numeric",
+                    "value": {
+                        "tsx": "$event.[temperature].Double"
+                    },
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "avg($value)"
+                    }
+                },
+                "Pressure": {
+                    "kind": "numeric",
+                    "value": {
+                        "tsx": "$event.[pressure].Double"
+                    },
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "avg($value)"
+                    }
+                },
+                "Magnetometer (x)": {
+                    "kind": "numeric",
+                    "value": {
+                        "tsx": "$event.[magnetometer_x].Double"
+                    },
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "avg($value)"
+                    }
+                },
+                "Magnetometer (y)": {
+                    "kind": "numeric",
+                    "value": {
+                        "tsx": "$event.[magnetometer_y].Double"
+                    },
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "avg($value)"
+                    }
+                },
+                "Magnetometer (z)": {
+                    "kind": "numeric",
+                    "value": {
+                        "tsx": "$event.[magnetometer_z].Double"
+                    },
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "avg($value)"
+                    }
+                },
+                "Gyroscope (x)": {
+                    "kind": "numeric",
+                    "value": {
+                        "tsx": "$event.[gyroscope_x].Double"
+                    },
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "avg($value)"
+                    }
+                },
+                "Gyroscope (y)": {
+                    "kind": "numeric",
+                    "value": {
+                        "tsx": "$event.[gyroscope_y].Double"
+                    },
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "avg($value)"
+                    }
+                },
+                "Gyroscope (z)": {
+                    "kind": "numeric",
+                    "value": {
+                        "tsx": "$event.[gyroscope_z].Double"
+                    },
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "avg($value)"
+                    }
+                },
+                "Accelerometer (x)": {
+                    "kind": "numeric",
+                    "value": {
+                        "tsx": "$event.[accelerometer_x].Double"
+                    },
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "avg($value)"
+                    }
+                },
+                "Accelerometer (y)": {
+                    "kind": "numeric",
+                    "value": {
+                        "tsx": "$event.[accelerometer_y].Double"
+                    },
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "avg($value)"
+                    }
+                },
+                "Accelerometer (z)": {
+                    "kind": "numeric",
+                    "value": {
+                        "tsx": "$event.[accelerometer_z].Double"
+                    },
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "avg($value)"
+                    }
+                },
+                "Location (latitutde)": {
+                    "kind": "numeric",
+                    "value": {
+                        "tsx": "$event.[location_lat].Double"
+                    },
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "avg($value)"
+                    }
+                },
+                "Location (longitude)": {
+                    "kind": "numeric",
+                    "value": {
+                        "tsx": "$event.[location_lon].Double"
+                    },
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "avg($value)"
+                    }
+                },
+                "Location (altitude)": {
+                    "kind": "numeric",
+                    "value": {
+                        "tsx": "$event.[location_alt].Double"
+                    },
+                    "filter": null,
+                    "interpolation": null,
+                    "aggregation": {
+                        "tsx": "avg($value)"
+                    }
+                },
+                "condition": {
+                    "kind": "categorical",
+                    "value": {
+                        "tsx": "tolong($event.temperature_anomaly.Double)"
+                    },
+                    "filter": {
+                        "tsx": "(tolong($event.temperature_anomaly.Double)) != null"
+                    },
+                    "interpolation": {
+                        "kind": "step",
+                        "boundary": {
+                            "span": "PT5M"
+                        }
+                    },
+                    "categories": [
+                        {
+                            "label": "OK",
+                            "values": [
+                                0
+                            ]
+                        },
+                        {
+                            "label": "NOK",
+                            "values": [
+                                1
+                            ]
+                        }
+                    ],
+                    "defaultCategory": {
+                        "label": "Unknown"
+                    }
+                }
+            }
+        }
+    ]
+}

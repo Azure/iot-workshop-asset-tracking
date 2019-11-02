@@ -1,0 +1,12 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+li {
+  margin-bottom: .4em;
+}
+
+li:last-child {
+ margin-bottom: 0px;
+}

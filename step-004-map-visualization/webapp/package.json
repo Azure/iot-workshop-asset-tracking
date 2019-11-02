@@ -1,0 +1,20 @@
+{
+  "name": "contoso-webapp-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "auth.js",
+  "author": "Benjamin Cabé",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"cross-env PORT=443 serve\" \"open-cli https://insights-local.timeseries.azure.com/mapsexample.html\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "cross-env": "^6.0.3",
+    "https-localhost": "^4.4.1",
+    "open-cli": "^5.0.0"
+  },
+  "dependencies": {
+    "azure-maps-control": "^2.0.15"
+  }
+}
