@@ -36,7 +36,7 @@ In this section, we are going to setup the messaging infrastructure needed to co
 
 ### Create an Azure IoT Hub and an Azure Device Provisioning Service
 
-Follow the [instructions from Azure IoT DPS documentation](https://docs.microsoft.com/azure/iot-dps/quick-setup-auto-provision#create-a-new-instance-for-the-iot-hub-device-provisioning-service) to provision an Azure IoT Hub, a Device Provisioning Service, and linking the two together.
+Follow the [instructions from Azure IoT DPS documentation](https://docs.microsoft.com/azure/iot-dps/quick-setup-auto-provision#create-an-iot-hub) to provision an Azure IoT Hub, a Device Provisioning Service, and linking the two together.
 
 > **_IMPORTANT:_**  
 >
