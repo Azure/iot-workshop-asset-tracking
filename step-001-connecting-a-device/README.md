@@ -44,7 +44,7 @@ Follow the [instructions from Azure IoT DPS documentation](https://docs.microsof
 
 In order to easily find your resources later, you will want to create the IoT Hub and the Device Provisioning Service in the same Resource Group you've created in the previous step.
 
-Once your services are properly provisioned and your DPS service is linked to your IoT Hub instance, you need to create a DPS Group Enrollment. As opposed to single enrollments where you individually "whitelist" and create a set of credentials for every device, a group enrollment can provide you with more flexibility by having a unique set of credentials for all the devices in the ame group.
+Once your services are properly provisioned and your DPS service is linked to your IoT Hub instance, you need to create a DPS Group Enrollment. As opposed to single enrollments where you individually "whitelist" and create a set of credentials for every device, a group enrollment can provide you with more flexibility by having a unique set of credentials for all the devices in the same group.
 
 In the Azure Portal, navigate to the Device Provisioning Service you have just created.
 

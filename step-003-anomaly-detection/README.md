@@ -40,7 +40,7 @@ In the section below, we are going to setup an Azure Stream Analytics job that i
    * **Hosting environment**: Cloud.
    * **Streaming units**: 1.  
 \
-![Create a new Stream Analytics job - Infos](assets/stream-analytics-job-creation-info.png)
+![Create a new Stream Analytics job - Information](assets/stream-analytics-job-creation-info.png)
 
 1. You should see a 'Deployment started...' notification displayed in the top right of your browser window. It should only take a few seconds for it to indicate your job as successfully been created.
 

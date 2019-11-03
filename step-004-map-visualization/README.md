@@ -1,7 +1,6 @@
 # Map visualization - Where are my parcels? <!-- omit in toc -->
 
-Contoso Art Shipping is interested in being able to visualize in real-time the location of their assets, and XXX
-XXX 
+Contoso Art Shipping is interested in being able to visualize in real-time the location of their assets. In the previous step, we've already taken care of storing the geographical position of the asset trackers and telemetry into Time Series Insights. We are now going to look at using the TSI JavaScript SDK to retrieve this data in a web page, and interactively display it on a map by using the Azure Maps Web SDK. 
 
 ## Learning goals <!-- omit in toc -->
 
@@ -12,7 +11,7 @@ XXX
 
 * [Create an Azure Maps account](#create-an-azure-maps-account)
 * [Setup your local development environment](#setup-your-local-development-environment)
-* [Complete the Javascript code](#complete-the-javascript-code)
+* [Complete the JavaScript code](#complete-the-javascript-code)
   * [Replace global variables](#replace-global-variables)
   * [Initialize the Maps component](#initialize-the-maps-component)
   * [Create map layers, data sources, and mouse events](#create-map-layers-data-sources-and-mouse-events)
@@ -29,7 +28,7 @@ You should be fine with the S0 pricing tier but feel free to go for an S1 subscr
 
 ### Setup your local development environment
 
-1. If you haven't already, clone the current Git repository (`git clone TODO`), and navigate to the `step-004-map-visualization/webapp/` folder.
+1. If you haven't already, clone the current Git repository (`git clone https://github.com/kartben/azure-iot-realtime-asset-tracking-workshop`), and navigate to the `step-004-map-visualization/webapp/` folder.
 
 2. Open the Windows host file located `C:\Windows\System32\drivers\etc\hosts` (or `/etc/hosts` if you are on Linux or MacOS) and add a new line with the following information:
     > `127.0.0.1 insights-local.timeseries.azure.com`
@@ -40,13 +39,15 @@ You should be fine with the S0 pricing tier but feel free to go for an S1 subscr
 
 5. Enter `npm start` (or `sudo npm start` if you are on Linux or MacOS).
 
-At this point, you should have your web browser open at the URL: [https://insights-local.timeseries.azure.com/mapsexample.html](https://insights-local.timeseries.azure.com/mapsexample.html).
+At this point, you should have your web browser open at the URL: [https://insights-local.timeseries.azure.com/mapsexample.html](https://insights-local.timeseries.azure.com/mapsexample.html). The application isn't functional just yet, as there is some code for you to complete!
 
-Due to the way AAD TODO XXX.
+> **_NOTE:_**  
+>
+> This setup is necessary as we're authenticating against TSI using Azure Active Directory, using a globally registered AAD app that is expecting the web application to specifically run on https://insights-local.timeseries.azure.com. In a real-world scenario, you would probably want to [register your own application](https://docs.microsoft.com/en-us/azure/time-series-insights/time-series-insights-authentication-and-authorization).
 
-### Complete the Javascript code
+### Complete the JavaScript code
 
-In this step, we are going to go through the key elements of the Javascript client code needed to display an interactive time series chart linked to a map.
+In this step, we are going to go through the key elements of the JavaScript client code needed to display an interactive time series chart linked to a map.
 
 There are several `TODO`s throughout the [`script.js`](./webapps/script.js) file.
 
@@ -184,7 +185,7 @@ map.events.add('ready', function () {
 
 In the previous step, you may have noticed that `mousemove` and `mouseout` events are calling `highlightMap` and `unhighlightMap` functions. Let's create them!
 
-When a timestamp is highlighted, all shapes on the map except those with the specified timestamp will become semi transparent. Additionally, a popup will appear over the shape on the map and display the timestamp, temperature and humidty information. Copy the following into the onload event handler.
+When a timestamp is highlighted, all shapes on the map except those with the specified timestamp will become semi transparent. Additionally, a popup will appear over the shape on the map and display the timestamp, temperature and humidity information. Copy the following into the onload event handler.
 
 Replace the following section:
 
@@ -417,7 +418,7 @@ Open a web browser and navigate to [https://insights-local.timeseries.azure.com/
 
 Before we wrap up this section, here are a few ideas if you are interested in taking your application further:
 
-* Consider adding a symbol layer to the map and dsiplay an icon or text above each bubble on the map.
+* Consider adding a symbol layer to the map and display an icon or text above each bubble on the map.
 * Consider adding creating a data range slider allowing to select a range of data to display. Update the chart and map accordingly.
 * You could add a heat map layer to the map, together with simple controls for switching between the different map layer modes.
 * If your Azure Maps Subscription is on S1 pricing tier, you can change your map style to satellite. Existing S0 subscriptions can be upgraded directly from the Azure portal.
@@ -446,8 +447,8 @@ The next step will be led by your proctor. It will show you how you can integrat
                              -- reported location for the tracker in the past minute.
     ```
 
-* How to use LogicApps to very simply turn the anomaly events into actual records in Contoso Art Shpping's ERP, which is powered by PowerApps and the Common Data Model.
-* How to improve Contoso's exisiting mobile application with the insights we are now collecting.
+* How to use LogicApps to very simply turn the anomaly events into actual records in Contoso Art Shipping's ERP, which is powered by PowerApps and the Common Data Model.
+* How to improve Contoso's existing mobile application with the insights we are now collecting.
 
 The solution we have started to build during this workshop looks pretty promising to Contoso's management. It integrates well with their existing applications, and they feel it can easily evolve as their business grows: Plug-and-Play provides them with the ability to onboard trackers from various manufacturers seamlessly, DPS helps them with scalable and secure provisioning workflows, etc. They are however wondering if they should really be managing their own IoT Hub, worry about scaling their Stream Analytics jobs up and down, etc.
 
