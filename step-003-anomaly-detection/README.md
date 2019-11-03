@@ -23,8 +23,8 @@ In the section below, we are going to setup an Azure Stream Analytics job that i
 * [Setup input and output for your stream job](#setup-input-and-output-for-your-stream-job)
 * [Create a query to detect abnormal temperatures](#create-a-query-to-detect-abnormal-temperatures)
 * [Start the Stream Analytics job](#start-the-stream-analytics-job)
-* [Checking that the job is running](#checking-that-the-job-is-running)
-* [Visualizing anomalies in Time Series Insights](#visualizing-anomalies-in-time-series-insights)
+* [Check that the job is running](#check-that-the-job-is-running)
+* [Visualize anomalies in Time Series Insights](#visualize-anomalies-in-time-series-insights)
 
 ### Create a Stream Analytics job
 
@@ -131,7 +131,7 @@ Once this job will start running, it will emit a new event to Event Hub for each
 
 2. Under **Start job**, select **Now**, for the **Job output start time** field. Then, select **Start** to start your job.
 
-### Checking that the job is running
+### Check that the job is running
 
 Visual Studio Code has some great extensions to help you when developing against Azure Services.
 
@@ -147,7 +147,7 @@ If you don't already have it, install the [Azure Event Hub Explorer VS Code exte
 >
 > Don't forget to run **Event Hub: Stop Monitoring Event Hub Message** command when you're finished. In the next step we are going to use Event Hub as a new event source in TSI, and since we haven't setup a dedicated consumer group in our Event Hub, we need to release access to the `$Default` one.
 
-### Visualizing anomalies in Time Series Insights
+### Visualize anomalies in Time Series Insights
 
 1. In the Azure portal, navigate to your TSI instance and click on "Event Sources". Select "Add". Complete all the necessary fields, selecting the Event Hub you configured as the output for the ASA job. You can select the $Default consumer group and leave the Timestamp property blank.
 

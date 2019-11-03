@@ -12,8 +12,8 @@ In this section, we are going to setup the messaging infrastructure needed to co
 
 * [Create a resource group](#create-a-resource-group)
 * [Create an Azure IoT Hub and an Azure Device Provisioning Service](#create-an-azure-iot-hub-and-an-azure-device-provisioning-service)
-* [Connecting MXChip Plug-and-Play asset tracker](#connecting-mxchip-plug-and-play-asset-tracker)
-* [Exploring the capabilities of the asset tracking device](#exploring-the-capabilities-of-the-asset-tracking-device)
+* [Connect the MXChip Plug-and-Play asset tracker](#connect-the-mxchip-plug-and-play-asset-tracker)
+* [Explore the capabilities of the asset tracking device](#explore-the-capabilities-of-the-asset-tracking-device)
 
 ### Create a resource group
 
@@ -61,7 +61,7 @@ In your provisioning service:
     >
     > For production use cases, you will want to make sure your device is storing the grouo symmetric key in some form of secure storage and can't easily be extracted from the deive. If your group symmetric key is compromised, it potentially allows anyone to provision devices in your environment.
 
-### Connecting MXChip Plug-and-Play asset tracker
+### Connect the MXChip Plug-and-Play asset tracker
 
 Follow the instructions available [here](https://github.com/kartben/mxchip_pnp_asset_tracker) in order to program your MXChip device with a firmware that is PnP compatible, and reports simulated latitude/longitude in addition to real telemetry coming from its sensors.
 
@@ -73,7 +73,7 @@ In addition to your Wi-Fi credentials, you will need to enter the following info
 
 When you've completed these instructions, your MXChip device should be connected to IoT Hub, and sending telemetry information as well as listening to commands. In the next step we will actually explore the device capabilities, using the [Azure IoT Device Explorer](https://github.com/Azure/azure-iot-explorer).
 
-### Exploring the capabilities of the asset tracking device
+### Explore the capabilities of the asset tracking device
 
 1. Download and install the latest version of the Azure IoT Explorer tool from the [Github release page](https://github.com/Azure/azure-iot-explorer/releases/latest).
 

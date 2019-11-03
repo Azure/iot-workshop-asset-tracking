@@ -17,11 +17,11 @@ Introducing Azure Time Series Insights Preview (TSI)! TSI is an end-to-end PaaS 
 
 ## Steps <!-- omit in toc -->
 
-* [Step 1: Create an Azure Time Series Insights Preview environment](#step-1-create-an-azure-time-series-insights-preview-environment)
-* [Step 2: Explore data in your TSI Environment](#step-2-explore-data-in-your-tsi-environment)
-* [Step 3: Contextualize and Analyze data](#step-3-contextualize-and-analyze-data)
+* [Create an Azure Time Series Insights Preview environment](#create-an-azure-time-series-insights-preview-environment)
+* [Explore data in your TSI Environment](#explore-data-in-your-tsi-environment)
+* [Contextualize and Analyze data](#contextualize-and-analyze-data)
 
-### Step 1: Create an Azure Time Series Insights Preview environment
+### Create an Azure Time Series Insights Preview environment
 
 1. Sign-in to the Azure portal by using your subscription account.
 
@@ -67,7 +67,7 @@ Introducing Azure Time Series Insights Preview (TSI)! TSI is an end-to-end PaaS 
 
     ![Verify access](assets/verify-accesss.png)
 
-### Step 2: Explore data in your TSI Environment
+### Explore data in your TSI Environment
 
 In this section, you will explore data in your new environment via the Azure Time Series Insights Preview explorer.
 
@@ -109,7 +109,7 @@ In this section, you will explore data in your new environment via the Azure Tim
 
     ![Heat map](assets/heat-map.png)
 
-### Step 3: Contextualize and Analyze data
+### Contextualize and Analyze data
 
 In the previous section, you charted a raw data stream without contextualization. In this section, you will add time series model entities to contextualize your IoT data.
 Time Series Model (preview) has 3 components: Types, Hierarchies and Instances.

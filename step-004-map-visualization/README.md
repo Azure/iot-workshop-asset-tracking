@@ -16,9 +16,9 @@ Contoso Art Shipping is interested in being able to visualize in real-time the l
   * [Initialize the Maps component](#initialize-the-maps-component)
   * [Create map layers, data sources, and mouse events](#create-map-layers-data-sources-and-mouse-events)
   * [Map highlighting functions](#map-highlighting-functions)
-  * [Querying TSI](#querying-tsi)
-  * [Creating a chart](#creating-a-chart)
-* [Testing the application](#testing-the-application)
+  * [Query TSI](#query-tsi)
+  * [Create a chart](#create-a-chart)
+* [Test the application](#test-the-application)
 
 ### Create an Azure Maps account
 
@@ -243,7 +243,7 @@ function unhighlightMap() {
 }
 ```
 
-#### Querying TSI
+#### Query TSI
 
 Next we will define the expressions for the Time Series Insights chart that displays the temperature and humidity information, as well as the expressions for querying latitude and longitude history.
 
@@ -322,7 +322,7 @@ positionsTsqExpressions.push(new tsiClient.ux.TsqExpression(
     'Lon')); // alias
 ```
 
-#### Creating a chart
+#### Create a chart
 
 Next, data will be requested from Time Series Insights. A line chart will be created and the temperature, humidity and timestamp information rendered on the chart will be extracted and used to create data points on the map.
 
@@ -410,7 +410,7 @@ tsiClient.server.getTsqResults(token, TSI_FQDN, linechartTsqExpressions.map(func
 });
 ```
 
-### Testing the application
+### Test the application
 
 Open a web browser and navigate to [https://insights-local.timeseries.azure.com/mapsexample.html](https://insights-local.timeseries.azure.com/mapsexample.html).
 
