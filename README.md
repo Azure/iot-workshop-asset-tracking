@@ -32,4 +32,4 @@ The last part will showcase how to feed your insights(we'll learn how to trigger
 
 ## Supporting slide deck
 
-You can follow along using the [following slide deck](assets/Azure&#32;IoT&#32;Workshop&#32;-&#32;Realtime&#32;asset&#32;workshop.pdf).
+You can follow along using the [following slide deck](assets/Azure&#32;IoT&#32;Workshop&#32;-&#32;Realtime&#32;asset&#32;tracking.pdf).
