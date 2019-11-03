@@ -33,7 +33,8 @@ You should be fine with the S0 pricing tier but feel free to go for an S1 subscr
 2. Open the Windows host file located `C:\Windows\System32\drivers\etc\hosts` (or `/etc/hosts` if you are on Linux or MacOS) and add a new line with the following information:
     > `127.0.0.1 insights-local.timeseries.azure.com`
 
-3. Open a terminal. **IMPORTANT: If you are running Windows, you should run it as administrator**.
+3. Open a terminal.
+    > **IMPORTANT** : If you are running Windows, you should open your terminal as administrator.
 
 4. Enter `npm install`.
 
