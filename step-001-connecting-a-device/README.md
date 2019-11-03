@@ -92,13 +92,15 @@ When you've completed these instructions, your MXChip device should be connected
     * Navigate to **urn:azureiot:DeviceManagement:DeviceInformation:1** > **Properties (non-writable)**. Note how the device is reporting about its hardware capabilities in a standard way. As a solution builder, you can expect any Plug-and-Play device to always expose these properties, which helps rationalizing device management efforts.
     * Navigate to **urn:mxchip:built_in_sensors:1** > **Telemetry**. Click on the **Start** button and observe the flow of telemetry information being sent every 5 seconds. Also observe how the tool provides you with useful metadata about sensor data, thanks to PnP.
     * Navigate to **urn:mxchip:screen:1** > **Commands**. Test any of the available commands, and enjoy  bidirectional communication with your device!
-    * Navigate to **urn:contosoartshipping:position:1** > **Interface**. Often times, the PnP interfaces a device is implementing will be available through either a public Microsoft repository, or a private/company one. There is also an option for the device to implement the urn:azureiot:ModelDiscovery:ModelDefinition:1 interface, which effectively allows for the interface to be automatically discovered from the cloud by retrieving it from the device. Note how the UI is indicating **Source: On the connected device**, reflecting the fact that the custom 'position' interface has not been found in PnP repository, and instead retrieved from the device.
+    * Navigate to **urn:contosoartshipping:position:1** > **Interface**. Often times, the PnP interfaces a device is implementing will be available through either a public Microsoft repository, or a private/company one. There is also an option for the device to implement the `urn:azureiot:ModelDiscovery:ModelDefinition:1` interface, which effectively allows for the interface to be automatically discovered from the cloud by retrieving it from the device. Note how the UI is indicating **Source: On the connected device**, reflecting the fact that the custom 'position' interface has not been found in PnP repository, and instead retrieved from the device.
 
 ## Going further <!-- omit in toc -->
 
 If you are interested in exploring further, you may want to think about how to best solve the following problems:
 
 * You aim at connecting tens of thousands of asset trackers in the near future, and realize that you may need more than one IoT Hub instance. It would be handy if you could leverage the Device Provisioning Service to help with assigning a suitable IoT Hub (based on best latency, or other custom rules) to your devices as they connect for the first time, right? Feel free to [explore the docs](https://docs.microsoft.com/en-us/azure/iot-dps/tutorial-set-up-cloud#set-the-allocation-policy-on-the-device-provisioning-service) and experiment!
+
+* In addition to the Azure IoT Explorer, another great developer toolkit comes in the form of the [Azure IoT Tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools) extension for Visual Studio Code. It is very easy to configure and use, and can help you troubleshoot your communication scenarios or simulate device data without leaving your development environment.
 
 ## Wrap-up and Next steps <!-- omit in toc -->
 
