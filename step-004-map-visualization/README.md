@@ -450,6 +450,8 @@ The next step will be led by your proctor. It will show you how you can integrat
 * How to use LogicApps to very simply turn the anomaly events into actual records in Contoso Art Shipping's ERP, which is powered by PowerApps and the Common Data Model.
 * How to improve Contoso's existing mobile application with the insights we are now collecting.
 
+If you are interested in experimenting with Contoso's PowerApps application that list shipments in transit and connect it to your IoT solution, you can import the [following solution](https://github.com/kartben/Inspire-E2E-IoT-Workshop/raw/master/lab-setup/powerapps/ContosoAssetTracking_1_0_2_4.zip) in your PowerApps environment (see more instructions [here](https://github.com/kartben/Inspire-E2E-IoT-Workshop/tree/master/lab-setup#4-Setting-up-your-PowerApps-environment)).
+
 The solution we have started to build during this workshop looks pretty promising to Contoso's management. It integrates well with their existing applications, and they feel it can easily evolve as their business grows: Plug-and-Play provides them with the ability to onboard trackers from various manufacturers seamlessly, DPS helps them with scalable and secure provisioning workflows, etc. They are however wondering if they should really be managing their own IoT Hub, worry about scaling their Stream Analytics jobs up and down, etc.
 
 Your proctor will give you a tour of [Azure IoT Central](http://aka.ms/iotcentral), a hosted IoT application platform (think "IoT-as-a-Service"), and give you some insights into why and when a company like Contoso should be going down that path.
