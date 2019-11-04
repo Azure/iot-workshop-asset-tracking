@@ -54,12 +54,12 @@ There are several `TODO`s throughout the [`script.js`](./webapps/script.js) file
 
 #### Replace global variables
 
-Towards the beginning of the script, replace the following constants to reflect your environment.
+Towards the beginning of the script, update the values of the following constants to reflect your environment.
 
 ```javascript
 const TSI_FQDN = '<000000-000000-0000-00000.env.timeseries.azure.com>'; // You can find this in the overview of your Time Series Insights resource in the Azure portal
-const AZURE_MAPS_SUBSCRIPTION_KEY = '<Your_Azure_Maps_Key>';
-const TIME_SERIES_ID = '<Your_Time_Series_ID>';
+const AZURE_MAPS_SUBSCRIPTION_KEY = '<Your_Azure_Maps_Key>';            // Your Azure Maps subscription key. Get your key in the "Authentication" section of your Azure Maps service in the Azure Portal
+const TIME_SERIES_ID = '<Your_Time_Series_ID>';                         // The ID of the device (and hence associated time series) you want to display in this page
 ```
 
 #### Initialize the Maps component

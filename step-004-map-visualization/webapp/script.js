@@ -6,8 +6,8 @@
 var map, datasource, popup, dataLayer, hoverLayer, currentTimestamp;
 
 const TSI_FQDN = '<000000-000000-0000-00000.env.timeseries.azure.com>'; // You can find this in the overview of your Time Series Insights resource in the Azure portal
-const AZURE_MAPS_SUBSCRIPTION_KEY = '<Your_Azure_Maps_Key>';
-const TIME_SERIES_ID = '<Your_Time_Series_ID>';
+const AZURE_MAPS_SUBSCRIPTION_KEY = '<Your_Azure_Maps_Key>';            // Your Azure Maps subscription key. Get your key in the "Authentication" section of your Azure Maps service in the Azure Portal
+const TIME_SERIES_ID = '<Your_Time_Series_ID>';                         // The ID of the device (and hence associated time series) you want to display in this page
 
 window.onload = function () {
     initAuth('Maps Example');  //Initiate auth objects, header, and login modal
