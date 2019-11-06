@@ -28,7 +28,7 @@ In this workshop, you will be building Contoso Art Shipping's IoT solution.
 3. [Anomaly detection](step-003-anomaly-detection/)
 4. [Map visualization - Where are my parcels?](step-004-map-visualization/)
 
-The last part will showcase how to feed your insights(we'll learn how to trigger events on sudden temperature variations on our asset tracking devices) into Contoso's ERP and mobile application. It will be shown through a demo, as time constraints don't allow for this part to be included in this one-day workshop.
+The last part will showcase how to feed your insights (we'll learn how to trigger events on sudden temperature variations on our asset tracking devices) into Contoso's ERP and mobile application. It will be shown through a demo, as time constraints don't allow for this part to be included in this one-day workshop.
 
 ## Supporting slide deck
 
