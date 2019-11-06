@@ -6,7 +6,7 @@
 
 Contoso Art Shipping Inc. is a company specialized in shipping artwork. They are losing money as their customers are generally dissatisfied with their service – more and more parcel are getting damaged due to adverse weather conditions and improper handling, which causes a tremendous increase in insurance claims, as well as associated personnel costs to follow up on said claims.
 
-Contoso already have an ERP in place and they have built a mobile application that allows to show “basic” tracking information, essentially parcel pick-up date and estimated delivery date.
+Contoso already have an ERP in place and they have built a mobile application that allows to show “basic” tracking information, essentially the parcel pick-up date and estimated delivery date.
 
 They realize they need to be more precise on the location of the parcels, conditions during travel, and their overall ability to detect that goods are getting tampered during transport – they ship ~50,000 shipments a month with the issues mentioned above costing them an estimated \$2 per shipment on average, i.e over \$1M every year.
 
