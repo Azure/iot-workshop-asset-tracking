@@ -15,7 +15,7 @@ They realize they need to be more precise on the location of the parcels, condit
 * **Track** in real-time the physical location and condition of their parcels
 * Efficiently **store** this data so that it can be accessed and queried
 * Get **alerts** when abnormal conditions are detected…
-* … and visualize them on a **map**
+* …and visualize them on a **map**
 * **Integrate** with their existing business applications
 * **Scale** from a very small deployment to something much bigger
 
