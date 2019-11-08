@@ -1,3 +1,6 @@
 theme: jekyll-theme-hacker
 title: Azure IoT Workshop
 description: Real-time asset tracking for international art shipping company Contoso
+image: assets/twitter-card.png
+author:
+  twitter: kartben
