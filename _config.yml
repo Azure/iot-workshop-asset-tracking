@@ -1,6 +1,11 @@
 theme: jekyll-theme-hacker
-title: Azure IoT Workshop
-description: Real-time asset tracking for international art shipping company Contoso
-image: assets/twitter-card.png
-author:
-  twitter: kartben
+title: Azure IoT Workshop | Real-Time Asset Tracking
+description: End-to-end IoT workshop focusing on a real-time asset tracking scenario.
+twitter:
+  username: kartben
+  card: summary_large_image
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: assets/twitter-card.png

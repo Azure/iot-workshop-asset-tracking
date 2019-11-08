@@ -106,4 +106,4 @@ If you are interested in exploring further, you may want to think about how to b
 
 In this section, we have setup our messaging infrastructure, and used the Azure IoT Explorer to check that our device is properly connected.
 
-In the [next section](../step-step-002-setting-up-data-pipeline), we will setup the infrastructure needed for storing, visualizing, and querying our IoT data.
+In the [next section](../step-002-setting-up-data-pipeline), we will setup the infrastructure needed for storing, visualizing, and querying our IoT data.
