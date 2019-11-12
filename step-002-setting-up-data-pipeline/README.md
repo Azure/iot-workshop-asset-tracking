@@ -193,4 +193,4 @@ Leaders in your organization might want to have an easy-to-consume snapshot of y
 
 During this step, you've explored Time Series Insights preview explorer's ability to help in ad-hoc investigations.
 
-In the [next section](../step-step-003-anomaly-detection), we will enable anomaly detection using the Azure Stream Analytics and Event Hub services, and we will eventually visualize the anomalies in the TSI Explorer, along with the sensor telemetry.
+In the [next section](../step-003-anomaly-detection), we will enable anomaly detection using the Azure Stream Analytics and Event Hub services, and we will eventually visualize the anomalies in the TSI Explorer, along with the sensor telemetry.
