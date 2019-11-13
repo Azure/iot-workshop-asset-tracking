@@ -50,7 +50,7 @@ At this point, you should have your web browser open at the URL: [https://insigh
 
 In this step, we are going to go through the key elements of the JavaScript client code needed to display an interactive time series chart linked to a map.
 
-There are several `TODO`s throughout the [`script.js`](./webapps/script.js) file.
+There are several `TODO`s throughout the [`script.js`](./webapp/script.js) file.
 
 #### Replace global variables
 
