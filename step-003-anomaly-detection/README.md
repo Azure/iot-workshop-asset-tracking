@@ -48,7 +48,7 @@ In the section below, we are going to setup an Azure Stream Analytics job that i
 
 Typically, the output of an Azure Stream Analytics job is something you want to feed into other systems, be they data stores, business processes, etc. Contoso Art Shipping wants to detect sudden spikes or dips in temperature and treat these anomalies "events" at the same level as the telemetry coming in in real-time from the sensors. Therefore, you will use Event Hub as the output for your ASA job, and publish events having virtually the same form as telemetry events coming from the sensors into IoT Hub and that one can subscribe to using the built-in Event Hub compatible endpoint.
 
-Follow the official [instructions](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create) to create a new Event Hub namespace and an Event Hub in your resource group.
+Follow the official [instructions](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create) to create a new Event Hub namespace (pricing tier: Standard) as well as an Event Hub in your resource group.
 
 ### Setup input and output for your stream job
 
