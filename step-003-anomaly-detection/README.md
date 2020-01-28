@@ -77,7 +77,7 @@ Now, the Event Hub output:
 
 2. Select **Outputs** > **Add** > **Event Hub**.  
 
-3. Fill out the **Blob storage** page with the following values:
+3. Fill out the **Event Hub** page with the following values:
 
    |**Setting**  |**Suggested value**  |**Description**  |
    |---------|---------|---------|
