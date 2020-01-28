@@ -93,9 +93,7 @@ Azure Stream Analytics offers built-in machine learning based [anomaly detection
 
 Queries in Azure Stream Analytics are expressed in a SQL-like query language. We will use it to write a query that "SELECT"s the relevant fields from the the IoT Hub messages, make calls to the anomaly detection function to detect potential anomalies (alongside a confidence score), and then output the results to Event Hub.
 
-1. Navigate to the Stream Analytics job that you created earlier.  
-
-2. Select **Query** and update the query as follows:  
+1. Navigate to the **Query** page of the job, and update the query as follows:  
 
 ```sql
 WITH AnomalyDetectionStep AS
