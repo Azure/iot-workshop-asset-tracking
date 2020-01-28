@@ -52,7 +52,7 @@ In your provisioning service:
 
 1. Click **Manage enrollments**.
 2. Click the **Add enrollment group** button at the top.
-3. When the "Add Enrollment Group" panel appears, enter the information for the enrollment list entry. **Group name** is required. Select "Symmetric Key" for **Attestation Type**.
+3. When the "Add Enrollment Group" panel appears, enter the information for the enrollment list entry. **Group name** is required (as a suggestion, you can name the enrollment group "AssetTrackers"). Select "Symmetric Key" for **Attestation Type**.
 4. Click **Save**. On successful creation of your enrollment group, you should see the group name appear under the **Enrollment Groups** tab.
 5. Select the newly created Enrollment group in the **Enrollment Groups** tab.
 6. Click the Copy icon in **Primary Key** in order to copy the symmetric key that has been generated for this enrollment group to your clipboard. You will need it in the following step.
