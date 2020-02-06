@@ -177,38 +177,6 @@
                     "aggregation": {
                         "tsx": "avg($value)"
                     }
-                },
-                "condition": {
-                    "kind": "categorical",
-                    "value": {
-                        "tsx": "tolong($event.temperature_anomaly.Double)"
-                    },
-                    "filter": {
-                        "tsx": "(tolong($event.temperature_anomaly.Double)) != null"
-                    },
-                    "interpolation": {
-                        "kind": "step",
-                        "boundary": {
-                            "span": "PT5M"
-                        }
-                    },
-                    "categories": [
-                        {
-                            "label": "OK",
-                            "values": [
-                                0
-                            ]
-                        },
-                        {
-                            "label": "NOK",
-                            "values": [
-                                1
-                            ]
-                        }
-                    ],
-                    "defaultCategory": {
-                        "label": "Unknown"
-                    }
                 }
             }
         }
