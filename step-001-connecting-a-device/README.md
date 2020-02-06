@@ -59,7 +59,7 @@ In your provisioning service:
 
     > **_NOTE:_**  
     >
-    > For production use cases, you will want to make sure your device is storing the grouo symmetric key in some form of secure storage and can't easily be extracted from the deive. If your group symmetric key is compromised, it potentially allows anyone to provision devices in your environment.
+    > For production use cases, you will want to make sure your device is storing the group symmetric key in some form of secure storage and can't easily be extracted from the device. If your group symmetric key is compromised, it potentially allows anyone to provision devices in your environment.
 
 ### Connect the MXChip Plug-and-Play asset tracker
 
