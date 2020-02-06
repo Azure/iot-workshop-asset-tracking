@@ -63,7 +63,7 @@ In your provisioning service:
 
 ### Connect the MXChip Plug-and-Play asset tracker
 
-Follow the instructions available [here](https://github.com/kartben/mxchip_pnp_asset_tracker) in order to program your MXChip device with a firmware that is PnP compatible, and reports simulated latitude/longitude in addition to real telemetry coming from its sensors.
+Follow the instructions available [here](https://github.com/kartben/mxchip_pnp_asset_tracker/blob/master/README.md#prepare-the-device) in order to program your MXChip device with a firmware that is PnP compatible, and reports simulated latitude/longitude in addition to real telemetry coming from its sensors.
 
 In addition to your Wi-Fi credentials, you will need to enter the following information for the **Azure IoT DPS Settings**:
 
