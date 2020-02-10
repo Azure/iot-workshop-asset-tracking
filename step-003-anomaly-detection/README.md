@@ -8,7 +8,7 @@ We will base our solution on Azure Stream Analytics (ASA). Azure Stream Analytic
 
 An Azure Stream Analytics job consists of an input, query, and an output. Stream Analytics ingests data from Azure Event Hubs, Azure IoT Hub, or Azure Blob Storage. The query, which is based on SQL query language, can be used to easily filter, sort, aggregate, and join streaming data over a period of time.
 
-In the section below, we are going to setup an Azure Stream Analytics job that is ta
+In the section below, we are going to setup an Azure Stream Analytics job that will be using telemetry coming from IoT Hub's built-in Event Hub endpoint as its input, perform anomaly detection, and output the results into an Event Hub so as events corresponding to anomalies can be used by other components in Contoso's solution (ex. be displayed in Time Series Insights alongside telemetry).
 
 ## Learning goals <!-- omit in toc -->
 
