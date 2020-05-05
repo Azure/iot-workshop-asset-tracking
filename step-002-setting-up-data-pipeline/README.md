@@ -128,7 +128,7 @@ Time Series Model (preview) has 3 components: Types, Hierarchies and Instances.
 
    Contoso Art Shipping ships high-value, original, or highly sentimental artwork, and their trucks have climate-controlled environments. Given the delicate nature of art, significant variations in temperature could cause mild to severe damage, and thus operators want to be alerted to any changes to the shipping environment. We will create a categorical variable that will help label anomalies.  
 
-    * Click on "Types," and on the far right, under "Actions", select the pencil icon.
+    * Click on "Types". In the **DefaultType** line, on the far right, under "Actions", select the pencil icon.
     * Update the Name from DefaultType to Asset Tracker
     * Update Description from Default type to "Asset tracker equipped with various sensors"
     * Click on "Variables" and select "Add Variable"
@@ -138,15 +138,18 @@ Time Series Model (preview) has 3 components: Types, Hierarchies and Instances.
         * Name: Parcel Condition
         * Kind: Categorical
         * Value: Select Custom and paste the following: `tolong($event.temperature_anomaly.Double)`
-        * Categories:
-        * Label / Values:
-        * Undamaged /  0
-        * Damaged / 1
+        * Categories: set to the below labels and values
+
+        | Label             | Values    |
+        | :---------------  | :-------- |
+        | Undamaged         | 0         |
+        | Damaged           | 1         |
+    
         * Default Category: Unknown
 
         ![Categorical type](assets/categorical.png)
 
-    Click "Apply" and "Save".
+    * Click "Apply" and "Save".
 
     Now that we've explicitly defined a variable on the Asset Tracker type, the auto-discovered properties that we were able to chart in the previous step need to be added as well. You can expedite this process by uploading a JSON file containing the full description of all the Asset Tracker variables.
 
@@ -167,11 +170,14 @@ Time Series Model (preview) has 3 components: Types, Hierarchies and Instances.
 
     Click "Save".
 
-5. Next, click on “Instances” and open the edit modal. Verify that the Type in the drop-down is Asset Tracker. Select "Instance Fields" and check Delivery Routes to associate this instance with your hierarchy.
+5. Next, click on “Instances” and open the edit modal for the existing instance (clicking on the edit pencil in the **Actions** column). Verify that the Type in the drop-down is Asset Tracker. Select "Instance Fields" and check Delivery Routes to associate this instance with your hierarchy.
 
-    Enter the following:
-    Route Name (from hierarchy) : Redmond-Seattle
-    ParcelD (from hierarchy) : Enter a unique identifier for the artwork shipment that your asset tracker is currently tracking
+    Enter the following field values:
+
+    | Name                        | Value           |
+    | :-------------------------- | :-------------- |
+    | Route Name (from hierarchy) | Redmond-Seattle |
+    | ParcelD (from hierarchy)    | *Enter a unique identifier for the artwork shipment that your asset tracker is currently tracking* |
 
     ![Edit Instance Fields](assets/editInstanceFields.png)
 

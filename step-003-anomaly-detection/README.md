@@ -67,7 +67,7 @@ Let's first configure our IoT Hub input:
    |Input alias  |  input   |  Enter a name to identify the job’s input.   |
    |Subscription   |  \<Your subscription\> |  The Azure subscription you are using for this workshop. |
    |IoT Hub  |  \<Your IoT Hub\> |  Enter the name of the IoT Hub you created in the previous section. |
-   |Consumer Group  |  asaConsumerGroup | This needs to be a different consumer group than the one used by Time Series Insights! |
+   |Consumer Group  |  asaConsumerGroup | This needs to be a different consumer group than the one used by Time Series Insights! To create a new consumer group, check out the IoT Hub documentation |
 
 4. Leave other options to default values and select **Save** to save the settings.  
 

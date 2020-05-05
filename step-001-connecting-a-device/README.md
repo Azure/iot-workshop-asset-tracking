@@ -87,7 +87,7 @@ When you've completed these instructions, your MXChip device should be connected
 
     ![Azure IoT Explorer - Device list](assets/explorer-device-list.png)
 
-5. Use the entries in "Digital Twin" to explore the capabilities of the device. For example:
+5. Use the entries in "IoT Plug and Play components" to explore the capabilities of the device. For example:
 
     * Navigate to **urn:azureiot:DeviceManagement:DeviceInformation:1** > **Properties (non-writable)**. Note how the device is reporting about its hardware capabilities in a standard way. As a solution builder, you can expect any Plug-and-Play device to always expose these properties, which helps rationalizing device management efforts.
     * Navigate to **urn:mxchip:built_in_sensors:1** > **Telemetry**. Click on the **Start** button and observe the flow of telemetry information being sent every 5 seconds. Also observe how the tool provides you with useful metadata about sensor data, thanks to PnP.

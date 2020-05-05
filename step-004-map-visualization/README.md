@@ -28,14 +28,14 @@ You should be fine with the S0 pricing tier but feel free to go for an S1 subscr
 
 ### Setup your local development environment
 
-1. If you haven't already, clone the current Git repository (`git clone https://github.com/Azure/iot-workshop-asset-tracking`), and navigate to the `step-004-map-visualization/webapp/` folder.
+1. If you haven't already, clone the current Git repository (`git clone https://github.com/Azure/iot-workshop-asset-tracking`).
 
 2. Open the Windows host file located `C:\Windows\System32\drivers\etc\hosts` (or `/etc/hosts` if you are on Linux or MacOS) and add a new line with the following information.
     > `127.0.0.1 insights-local.timeseries.azure.com`
 
     > **IMPORTANT** : If you are running Windows, you should open your text editor as Administrator.
 
-3. Open a terminal.
+3. In the terminal, navigate to the `step-004-map-visualization/webapp/` folder
     > **IMPORTANT** : If you are running Windows, you should open your terminal as Administrator.
 
 4. Enter `npm install`.
