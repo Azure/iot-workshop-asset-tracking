@@ -30,9 +30,18 @@ In this workshop, you will be building Contoso Art Shipping's IoT solution.
 
 The last part will showcase how to feed your insights (we'll learn how to trigger events on sudden temperature variations on our asset tracking devices) into Contoso's ERP and mobile application. It will be shown through a demo, as time constraints don't allow for this part to be included in this one-day workshop.
 
-## Supporting slide deck
+## Supporting slide deck & video walkthrough
 
 You can follow along using the [following slide deck](assets/Azure&#32;IoT&#32;Workshop&#32;-&#32;Realtime&#32;asset&#32;tracking.pdf).
+
+The video recording below walks you through the various steps of the workshop in about 3 hours:
+
+<iframe src="https://www.youtube.com/embed/3A6Lhakfyes" 
+    width="560" 
+    height="315"
+    frameborder="0" 
+    allowfullscreen>
+</iframe>
 
 ## Contributing
 
