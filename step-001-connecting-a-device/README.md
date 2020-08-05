@@ -75,7 +75,7 @@ When you've completed these instructions, your MXChip device should be connected
 
 ### Explore the capabilities of the asset tracking device
 
-1. Download and install the latest version of the Azure IoT Explorer tool from the [Github release page](https://github.com/Azure/azure-iot-explorer/releases/latest).
+1. Download and install the latest version of the Azure IoT Explorer tool from the [Github release page](https://github.com/Azure/azure-iot-explorer/releases/tag/v0.10.19).
 
 2. Enter your IoT Hub connection string. You can find this information in the Azure portal: open your IoT Hub resource, then go to **Shared access policies** pane, and click on **iothubowner**. You can then copy the **Connection string—primary key**.
   
