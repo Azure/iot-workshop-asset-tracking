@@ -9,16 +9,17 @@ Contoso Art Shipping is interested in being able to visualize in real-time the l
 
 ## Steps <!-- omit in toc -->
 
-* [Create an Azure Maps account](#create-an-azure-maps-account)
-* [Setup your local development environment](#setup-your-local-development-environment)
-* [Complete the JavaScript code](#complete-the-javascript-code)
-  * [Replace global variables](#replace-global-variables)
-  * [Initialize the Maps component](#initialize-the-maps-component)
-  * [Create map layers, data sources, and mouse events](#create-map-layers-data-sources-and-mouse-events)
-  * [Map highlighting functions](#map-highlighting-functions)
-  * [Query TSI](#query-tsi)
-  * [Create a chart](#create-a-chart)
-* [Test the application](#test-the-application)
+- [Create an Azure Maps account](#create-an-azure-maps-account)
+- [Setup your local development environment](#setup-your-local-development-environment)
+- [Complete the JavaScript code](#complete-the-javascript-code)
+  - [Replace global variables](#replace-global-variables)
+  - [Initialize the Maps component](#initialize-the-maps-component)
+  - [Create map layers, data sources, and mouse events](#create-map-layers-data-sources-and-mouse-events)
+  - [Map highlighting functions](#map-highlighting-functions)
+  - [Query TSI](#query-tsi)
+  - [Create a chart](#create-a-chart)
+  - [Change the AuthenticationContext](#change-the-authenticationcontext)
+- [Test the application](#test-the-application)
 
 ### Create an Azure Maps account
 
@@ -411,6 +412,21 @@ tsiClient.server.getTsqResults(token, TSI_FQDN, linechartTsqExpressions.map(func
             }, linechartTsqExpressions);
         })
 });
+```
+
+#### Change the AuthenticationContext
+
+Next to replacing the several `TODO`s throughout the [`script.js`](./webapp/script.js) file, we also need to change one placeholder in the [`auth.js`](./webapp/auth.js) file.
+
+Replace the placeholder with your AAD TenantID in following section:
+
+```javascript
+    authContext = new AuthenticationContext({
+        authContextProperties, 
+        cacheLocation: 'localStorage',
+        tenant: '<Your_Azure_ActiveDirectory_Tenant_ID>',
+        clientId: '120d688d-1518-4cf7-bd38-182f158850b6'
+    });
 ```
 
 ### Test the application

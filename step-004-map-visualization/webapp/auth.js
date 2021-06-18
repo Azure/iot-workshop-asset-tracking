@@ -29,7 +29,13 @@ function initAuth(title){
     var authContextProperties = window.location.href.indexOf('tsiclientsample') !== -1 
         ? { postLogoutRedirectUri: 'https://tsiclientsample.azurewebsites.net', clientId: '11a652b9-f29f-40c8-ab29-5ccbe2271823', cacheLocation: 'localStorage' }
         : { postLogoutRedirectUri: 'https://insights.timeseries.azure.com', clientId: '120d688d-1518-4cf7-bd38-182f158850b6' , cacheLocation: 'localStorage'};
-    authContext = new AuthenticationContext(authContextProperties)
+
+    authContext = new AuthenticationContext({
+        authContextProperties, 
+        cacheLocation: 'localStorage',
+        tenant: '<Your_Azure_ActiveDirectory_Tenant_ID>',
+        clientId: '120d688d-1518-4cf7-bd38-182f158850b6'
+    });
 
     if (authContext.isCallback(window.location.hash)) {
 
