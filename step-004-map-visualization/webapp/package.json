@@ -9,10 +9,10 @@
     "start": "concurrently \"cross-env PORT=443 serve\" \"open-cli https://insights-local.timeseries.azure.com/mapsexample.html\""
   },
   "devDependencies": {
-    "concurrently": "^5.0.0",
+    "concurrently": "^5.3.0",
     "cross-env": "^6.0.3",
     "https-localhost": "^4.4.1",
-    "open-cli": "^5.0.0"
+    "open-cli": "^7.0.1"
   },
   "dependencies": {
     "azure-maps-control": "^2.0.15"
